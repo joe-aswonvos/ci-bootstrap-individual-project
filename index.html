@@ -120,6 +120,7 @@
                 >
                   <div class="accordion-body">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <!-- First Internal Source Card -->
                       <div class="col">
                         <div class="card h-100">
                           <div class="card-body">
@@ -169,6 +170,7 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Second Internal Source Card -->
                       <div class="col">
                         <div class="card h-100">
                           <div class="card-body">
@@ -218,6 +220,7 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Third Internal Source Card -->
                       <div class="col">
                         <div class="card h-100">
                           <div class="card-body">
@@ -225,9 +228,49 @@
                             <p class="card-text">
                               Description of internal source 3.
                             </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas3"
+                              aria-controls="offcanvasExample3"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas3"
+                              aria-labelledby="offcanvasExample3"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample3"
+                                >
+                                  More Information 3
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Third slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
+                      <!-- Fourth Internal Source Card -->
                       <div class="col">
                         <div class="card h-100">
                           <div class="card-body">
@@ -235,6 +278,45 @@
                             <p class="card-text">
                               Description of internal source 4.
                             </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas4"
+                              aria-controls="offcanvasExample4"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas4"
+                              aria-labelledby="offcanvasExample4"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample4"
+                                >
+                                  More Information 4
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Fourth slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -261,15 +343,207 @@
                   data-bs-parent="#sourceAccordion"
                 >
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <!-- First External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">External Source 1</h5>
+                            <p class="card-text">
+                              Description of externalsource 1.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas5"
+                              aria-controls="offcanvasExample5"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas5"
+                              aria-labelledby="offcanvasExample5"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample5"
+                                >
+                                  More Information
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Second External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">External Source 2</h5>
+                            <p class="card-text">
+                              Description of external source 2.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas6"
+                              aria-controls="offcanvasExample6"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas6"
+                              aria-labelledby="offcanvasExample6"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample6"
+                                >
+                                  More Information 2
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Second slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Third External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">External Source 3</h5>
+                            <p class="card-text">
+                              Description of external source 3.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas7"
+                              aria-controls="offcanvasExample7"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas7"
+                              aria-labelledby="offcanvasExample7"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample7"
+                                >
+                                  More Information 3
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Third slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Fourth External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">External Source 4</h5>
+                            <p class="card-text">
+                              Description of external source 4.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas8"
+                              aria-controls="offcanvasExample8"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas8"
+                              aria-labelledby="offcanvasExample8"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample8"
+                                >
+                                  More Information 4
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Fourth slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
