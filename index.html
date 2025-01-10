@@ -18,8 +18,8 @@
   <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
     <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#index.html"
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
           ><i class="fa-solid fa-brain"></i> #DYR</a
         >
         <button
@@ -72,11 +72,208 @@
           </div>
         </div>
       </section>
+
       <!-- Sources Section -->
-      <section id="sources" class="container">
-        <div class="row">
+      <section id="sources" class="container my-4">
+        <div class="row gx-5">
           <div class="col-12 text-center my-4">
-            <h3 class="display3">Sources</h3>
+            <h3 class="display-6">Sources</h3>
+          </div>
+          <!-- Left had side/top text box and header -->
+          <div class="col-12 col-lg-4">
+            <h4 class="display-8">Where do you get your facts from?</h4>
+            <p>
+              Cognitive information, the data our minds use to think and learn,
+              originates from both internal and external sources. Internal
+              sources stem from our existing knowledge, memories, emotions, and
+              internal sensations. These internal processes shape our
+              perceptions and influence how we interpret information. External
+              sources, on the other hand, come from the world around us,
+              including the vast and ever-growing digital realm. This includes
+              information gleaned from social media platforms, the internet,
+              news outlets, and other forms of digital communication. These
+              external stimuli provide a constant stream of information that
+              shapes our understanding of the world and influences our thoughts,
+              decisions, and behaviors.
+            </p>
+          </div>
+          <!-- Right hand side/bottom accordion containing clickable cards which open an off canvas from the left -->
+          <div class="col-12 col-lg-8">
+            <div class="accordion" id="sourceAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Internal
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#sourceAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Internal Source 1</h5>
+                            <p class="card-text">
+                              Description of internal source 1.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas1"
+                              aria-controls="offcanvasExample1"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas1"
+                              aria-labelledby="offcanvasExample1"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample1"
+                                >
+                                  More Information
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Internal Source 2</h5>
+                            <p class="card-text">
+                              Description of internal source 2.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas2"
+                              aria-controls="offcanvasExample2"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas2"
+                              aria-labelledby="offcanvasExample2"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample2"
+                                >
+                                  More Information 2
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Second slice of Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Integer nec odio. Praesent
+                                  libero. Sed cursus ante dapibus diam.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Internal Source 3</h5>
+                            <p class="card-text">
+                              Description of internal source 3.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Internal Source 4</h5>
+                            <p class="card-text">
+                              Description of internal source 4.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    External
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#sourceAccordion"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -119,16 +316,24 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li>
-                <a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="facebook" href="#"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
               </li>
               <li>
-                <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="twitter" href="#"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="youtube" href="#"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
               </li>
               <li>
-                <a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="linkedin" href="#"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
               </li>
             </ul>
           </div>

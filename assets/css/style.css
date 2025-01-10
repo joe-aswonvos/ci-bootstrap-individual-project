@@ -63,6 +63,21 @@ body {
     font-size: 1.2rem;
 }
 
+/* Sources Section */
+
+#sourceAccordion .accordion-button:not(collapsed) {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.btn[data-bs-toggle="offcanvas"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    border: none;
+}
+
 /* Footer */
 
 footer {
