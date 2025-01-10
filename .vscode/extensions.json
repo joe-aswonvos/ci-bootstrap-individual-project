@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "github.copilot-chat",
+        "github.copilot"
+    ]
+}
