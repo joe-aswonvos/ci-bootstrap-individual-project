@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tektur:wght@400..900&display=swap');
+
 /* Global Styles */
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tektur', sans-serif;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Nav Section */
+
+#nav {
+    font-family: 'Tektur', sans-serif;
+}
+
+#nav .navbar-brand {
+    font-size: 2rem;
+}
+
+#nav .navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
 
 /* Hero Section */
 
