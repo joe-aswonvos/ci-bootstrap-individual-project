@@ -38,6 +38,10 @@ body {
     font-size: 1.2rem;
 }
 
+#nav .navbar-nav .nav-link:hover {
+    color: var(--tertiary-color);
+}
+
 #nav {
     background-color: var(--primary-color);
 }
@@ -64,17 +68,57 @@ body {
 
 /* Sources Section */
 
+#sourceAccordion .accordion-body{
+    background-color: var(--tertiary-color);
+}
+
 #sourceAccordion .accordion-button:not(collapsed) {
     background-color: var(--primary-color);
     font-weight: bold;
     color: var(--secondary-color);
 }
 
+#sourceAccordion .accordion-button.collapsed {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
 .btn[data-bs-toggle="offcanvas"] {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: var(--primary-font);
-    border: none;
+    border: 1px solid var(--primary-color);
+}
+
+.btn[data-bs-toggle="offcanvas"]:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Reasoning section */
+
+#reasoning .nav-item {
+    background-color: transparent;
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+}
+
+#reasoning .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#reasoning .nav-link {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+#reasoning .nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 /* Footer */
