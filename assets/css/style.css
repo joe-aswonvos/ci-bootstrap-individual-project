@@ -47,8 +47,8 @@ body {
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hero_image.avif');
     background-position: center;
-    background-color: black;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-align: center;
     padding: 100px 0;
 }
@@ -210,7 +210,7 @@ footer .social-icons a {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-    color: #fff;
+    color: var(--tertiary-color);
     background-color: #29aafe
 }
 
