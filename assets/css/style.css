@@ -187,14 +187,16 @@ section {
 #verdict ol>li{
     color: var(--primary-color);
     font-family: var(--primary-font);
-    font-size: larger;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 #verdict ul>li{
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     font-size: medium;
+    font-weight: normal;
 }
 
 /* Footer */
