@@ -72,6 +72,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#fallacies">Fallacies</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#verdict">Verdict</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -1038,9 +1041,9 @@
           </div>
           <div class="col-12">
             <p class="mb-4">
-              Logical fallacies are common errors in reasoning that can undermine the
-              validity of an argument. They can be persuasive but are
-              fundamentally flawed and illogical. Recognizing fallacies is
+              Logical fallacies are common errors in reasoning that can
+              undermine the validity of an argument. They can be persuasive but
+              are fundamentally flawed and illogical. Recognizing fallacies is
               essential for critical thinking and evaluating the strength of an
               argument. By identifying fallacies, we can avoid being misled by
               faulty reasoning and make more informed decisions.
@@ -1049,9 +1052,16 @@
           </div>
           <!-- Cards containing Logical Fallacies -->
           <div class="col-12">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center"
+            >
+              <!-- Ad-Hominem Card -->
               <div class="col">
-                <div class="card h-100">
+                <div
+                  class="card h-100"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcAdHominem"
+                >
                   <div class="card-body">
                     <h5 class="card-title">Ad Hominem</h5>
                     <p class="card-text">
@@ -1061,8 +1071,53 @@
                   </div>
                 </div>
               </div>
+              <!-- Ad-Hominem Offcanvas -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcAdHominem"
+                aria-labelledby="offcAdHominemLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcAdHominemLabel">
+                    Ad Hominem Fallacy
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <h6 class="display-8 mb-4">Description</h6>
+                  <p>
+                    An ad-hominem fallacy occurs when someone attacks their
+                    opponent's character or personal traits instead of
+                    addressing the actual argument. This is a logical fallacy
+                    because it distracts from the core issue and attempts to
+                    discredit the person making the argument rather than
+                    evaluating the argument itself.
+                  </p>
+                  <h6 class="display-8 mb-4">Example</h6>
+                  <p>
+                    During a recent UK political debate, a politician criticized
+                    their opponent's proposal for increased social spending by
+                    claiming the opponent was "out of touch" and "elitist"
+                    because they attended an expensive private school. This
+                    attacks the opponent's background and social status rather
+                    than addressing the merits or drawbacks of the proposed
+                    social spending policies.
+                  </p>
+                </div>
+              </div>
+              <!-- Straw Man Card -->
               <div class="col">
-                <div class="card h-100">
+                <div
+                  class="card h-100"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcStrawMan"
+                >
                   <div class="card-body">
                     <h5 class="card-title">Straw Man</h5>
                     <p class="card-text">
@@ -1072,8 +1127,57 @@
                   </div>
                 </div>
               </div>
+              <!-- Straw Man Offcanvas -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcStrawMan"
+                aria-labelledby="offcStrawManLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcStrawManLabel">
+                    Straw Man Fallacy
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <h6 class="display-8 mb-4">Description</h6>
+                  <p>
+                    A straw man fallacy occurs when someone misrepresents their
+                    opponent's argument to make it easier to attack. Instead of
+                    addressing the actual argument, they 1 create a distorted or
+                    exaggerated version of it, and then proceed to tear down
+                    that distorted version. This misrepresentation allows them
+                    to easily refute the weakened argument while avoiding the
+                    actual points raised by their opponent
+                  </p>
+                  <h6 class="display-8 mb-4">Example</h6>
+                  <p>
+                    During a debate on stricter gun control measures in the UK,
+                    a politician might argue against the proposal by stating,
+                    "My opponent wants to completely ban all guns, leaving
+                    law-abiding citizens defenseless against criminals." This
+                    misrepresents the typical gun control proposal, which may
+                    focus on measures like stricter background checks or
+                    restrictions on certain types of firearms. By exaggerating
+                    the opponent's position into an extreme and easily refutable
+                    stance, the politician avoids engaging with the actual
+                    arguments for stricter gun control.
+                  </p>
+                </div>
+              </div>
+              <!-- Appeal to Ignorance Card -->
               <div class="col">
-                <div class="card h-100">
+                <div
+                  class="card h-100"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcIgnorance"
+                >
                   <div class="card-body">
                     <h5 class="card-title">Appeal to Ignorance</h5>
                     <p class="card-text">
@@ -1083,8 +1187,53 @@
                   </div>
                 </div>
               </div>
+              <!-- Appeal to Ignorance Offcanvas -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcIgnorance"
+                aria-labelledby="offcIgnoranceLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcIgnoranceLabel">
+                    Appeal to Ignorance Fallacy
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <h6 class="display-8 mb-4">Description</h6>
+                  <p>
+                    The appeal to ignorance fallacy occurs when someone argues
+                    that a statement must be true simply because it hasn't been
+                    proven false, or vice versa. This fallacy wrongly shifts the
+                    burden of proof.
+                  </p>
+
+                  <h6 class="display-8 mb-4">Example</h6>
+                  <p>
+                    A group of concerned citizens were debating the introduction
+                    of a new genetically modified crop in their region. One
+                    resident argued that the crop was perfectly safe because no
+                    scientific studies had yet conclusively proven it to be
+                    harmful. This argument, however, is flawed. The absence of
+                    proof of harm does not automatically establish safety. It's
+                    possible that the long-term effects of the crop simply
+                    haven't been fully researched yet.
+                  </p>
+                </div>
+              </div>
+              <!-- False Dilemma Card -->
               <div class="col">
-                <div class="card h-100">
+                <div
+                  class="card h-100"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcFalseDilemma"
+                >
                   <div class="card-body">
                     <h5 class="card-title">False Dilemma</h5>
                     <p class="card-text">
@@ -1092,6 +1241,41 @@
                       others exist.
                     </p>
                   </div>
+                </div>
+              </div>
+              <!-- False Dilemma Offcanvas -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcFalseDilemma"
+                aria-labelledby="offcFalseDilemmaLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcFalseDilemmaLabel">
+                    False Dilemma Fallacy
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <h6 class="display-8 mb-4">Description</h6>
+                  <p>
+                    The false dilemma fallacy occurs when someone presents only
+                    two options or sides to an issue, while in reality, there
+                    are more possibilities.
+                  </p>
+                  <h6 class="display-8 mb-4">Example</h6>
+                  <p>
+                    The classic argument, "You're either with us or against us,". This statement presents a false dilemma. It suggests
+                    that there are only two possible positions: complete support or complete opposition. In reality, there are many
+                    nuanced positions and degrees of support or opposition that exist between these two extremes.
+                    This fallacy is often used to manipulate people into choosing one side or the other by creating an artificial sense of
+                    urgency and limiting their options.
+                  </p>
                 </div>
               </div>
               <div class="col">
@@ -1143,6 +1327,117 @@
         </div>
       </section>
 
+      <!-- Verdict Section -->
+      <section class="container my-4" id="verdict">
+        <div class="row">
+          <div class="col-12 text-center my-4">
+            <h3 class="display-6 headings">Verdict</h3>
+          </div>
+          <div class="col-12">
+            <p class="mb-4">
+              Reaching a sound verdict requires a critical evaluation of both
+              internal and external sources of information. Internal sources,
+              such as our existing beliefs and emotions, can introduce biases
+              that distort our perceptions. External sources, particularly in
+              the digital age, are abundant but not always reliable.
+              Scrutinizing information for accuracy, considering different
+              perspectives, and identifying potential biases are crucial for
+              forming well-supported verdicts.
+            </p>
+          </div>
+          <!-- List of actions to reach verdict -->
+          <div class="col-12">
+            <h4 class="display-8">Steps to Reach a Verdict Effectively:</h4>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ol>
+              <li>
+                Evaluate Sources
+                <ul>
+                  <li>
+                    Internal Sources:
+                    <ul>
+                      <li>
+                        Identify potential biases: Recognize how personal
+                        beliefs, emotions, and past experiences might influence
+                        your interpretation of information.
+                      </li>
+                      <li>
+                        Challenge assumptions: Question your own pre-existing
+                        beliefs and consider alternative viewpoints.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    External Sources:
+                    <ul>
+                      <li>
+                        Assess credibility: Evaluate the source's authority,
+                        expertise, and potential biases.
+                      </li>
+                      <li>
+                        Check for accuracy: Verify information from multiple
+                        reputable sources.
+                      </li>
+                      <li>
+                        Consider the source's purpose: Determine if the source
+                        aims to inform, persuade, or entertain.
+                      </li>
+                      <li>
+                        Be wary of misinformation and disinformation: Recognize
+                        the spread of false or misleading information online and
+                        in other media.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ol start="2">
+              <li>
+                Analyze Reasoning:
+                <ul>
+                  <li>
+                    Identify the type of reasoning used: Determine if the
+                    argument relies on deductive (moving from general principles
+                    to specific conclusions) or inductive (moving from specific
+                    observations to general conclusions) reasoning.
+                  </li>
+                  <li>
+                    Evaluate the strength of the evidence: Determine if the
+                    evidence presented is sufficient, relevant, and reliable.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Recognize logical fallacies:
+                <ul>
+                  <li>Identify and avoid common errors in reasoning</li>
+                </ul>
+              </li>
+              <li>
+                Consider Different Perspectives:
+                <ul>
+                  <li>
+                    Seek out diverse viewpoints: Actively explore different
+                    perspectives and challenge your own assumptions.
+                  </li>
+                  <li>
+                    Engage in respectful dialogue: Discuss the issue with others
+                    who hold different views.
+                  </li>
+                  <li>
+                    Be open to changing your mind: If new evidence or arguments
+                    present a stronger case, be willing to revise your verdict.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
