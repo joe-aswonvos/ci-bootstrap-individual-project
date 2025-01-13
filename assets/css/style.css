@@ -27,6 +27,22 @@ body {
     background-color: var(--tertiary-color);
 }
 
+.headings {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 0;
+}
+
+.instructions {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--tertiary-color);
+    border-radius: 0   ;
+}
+
 /* Nav Section */
 
 #nav {
@@ -122,6 +138,22 @@ body {
 #reasoning .nav-link:hover {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
+}
+
+/* Fallacies Section */
+
+#fallacies .card-title {
+    color: var(--primary-color);
+}
+
+#fallacies .card:hover .card-title {
+    color: var(--secondary-color);
+}
+#fallacies .card:hover {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 /* Footer */
