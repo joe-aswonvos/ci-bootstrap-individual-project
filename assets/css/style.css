@@ -69,11 +69,16 @@ body {
 
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hero_image.avif');
-    background-position: center;
+    background-position: center calc(50% + 74px); /* Offcentre the image to account for the navbar */
+    background-size: cover;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     text-align: center;
-    padding: 174px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
 }
 
 .hero-section h1 {
@@ -152,7 +157,7 @@ body {
 #fallacies .card:hover {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    border: 1px solid var(--secondary-color);
+    border: var(--primary-color);
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
