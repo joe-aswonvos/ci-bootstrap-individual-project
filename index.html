@@ -1,292 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#DYR</title>
+    <!-- Default Favicon -->
+    <link rel="icon" href="assets/images/favicon-light.png" type="image/png" />
+    <!-- Dark mode Favicon -->
+    <link rel="icon" href="assets/images/favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <!-- Light mode Favicon -->
+    <link rel="icon" href="assets/images/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="assets/images/hero_image.avif"
+    />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>#DYR</title>
-  <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <!-- Custom css -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-  <!-- Navigation -->
-  <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#hero"><i class="fa-solid fa-brain"></i> #DYR</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sources">Sources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#reasoning">Reasoning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#fallacies">Fallacies</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!--Hero Section-->
-    <section id="hero" class="hero-section">
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
+        <a class="navbar-brand" href="#hero"
+          ><i class="fa-solid fa-brain"></i> #DYR</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sources">Sources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reasoning">Reasoning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fallacies">Fallacies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--Hero Section-->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center my-4">
+              <h1>Do Your Research!</h1>
+              <p class="lead fw-bolder">
+                Heard something? Thinking Something? Been asked to do Something?
+              </p>
+              <p>
+                This website is here to help you process and reach your own
+                conclusions
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sources Section -->
+      <section id="sources" class="container my-4">
         <div class="row">
           <div class="col-12 text-center my-4">
-            <h1>Do Your Research!</h1>
-            <p class="lead fw-bolder">
-              Heard something? Thinking Something? Been asked to do Something?
-            </p>
-            <p>
-              This website is here to help you process and reach your own
-              conclusions
+            <h3 class="display-6">Sources</h3>
+          </div>
+          <!-- Left had side/top text box and header -->
+          <div class="col-12 col-lg-4 py-2">
+            <h4 class="display-8">Where do you get your information from?</h4>
+            <p class="mb-4">
+              Cognitive information, the data our minds use to think and learn,
+              originates from both internal and external sources. Internal
+              sources stem from our existing knowledge, memories, emotions, and
+              internal sensations. These internal processes shape our
+              perceptions and influence how we interpret information. External
+              sources, on the other hand, come from the world around us,
+              including the vast and ever-growing digital realm. This includes
+              information gleaned from social media platforms, the internet,
+              news outlets, and other forms of digital communication. These
+              external stimuli provide a constant stream of information that
+              shapes our understanding of the world and influences our thoughts,
+              decisions, and behaviors.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sources Section -->
-    <section id="sources" class="container my-4">
-      <div class="row">
-        <div class="col-12 text-center my-4">
-          <h3 class="display-6">Sources</h3>
-        </div>
-        <!-- Left had side/top text box and header -->
-        <div class="col-12 col-lg-4">
-          <h4 class="display-8">Where do you get your information from?</h4>
-          <p class="mb-4">
-            Cognitive information, the data our minds use to think and learn,
-            originates from both internal and external sources. Internal
-            sources stem from our existing knowledge, memories, emotions, and
-            internal sensations. These internal processes shape our
-            perceptions and influence how we interpret information. External
-            sources, on the other hand, come from the world around us,
-            including the vast and ever-growing digital realm. This includes
-            information gleaned from social media platforms, the internet,
-            news outlets, and other forms of digital communication. These
-            external stimuli provide a constant stream of information that
-            shapes our understanding of the world and influences our thoughts,
-            decisions, and behaviors.
-          </p>
-        </div>
-        <!-- Right hand side/bottom accordion containing clickable cards which open an off canvas from the left -->
-        <div class="col-12 col-lg-8">
-          <div class="accordion" id="sourceAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Internal
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#sourceAccordion">
-                <div class="accordion-body">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <!-- First Internal Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Existing Knowledge</h5>
-                          <p class="card-text">
-                            Pre-existing information stored in the mind from learning and experiences.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas1" aria-controls="offcanvasExample1">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1"
-                            aria-labelledby="offcanvasExample1">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample1">
-                                Existing Knowledge
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+          <!-- Right hand side/bottom accordion containing clickable cards which open an off canvas from the left -->
+          <div class="col-12 col-lg-8">
+            <div class="accordion" id="sourceAccordion">
+              <!-- Accordion section on Internal Information -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Internal
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#sourceAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <!-- First Internal Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Existing Knowledge</h5>
+                            <p class="card-text">
+                              Pre-existing information stored in the mind from
+                              learning and experiences.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas1"
+                              aria-controls="offcanvasExample1"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas1"
+                              aria-labelledby="offcanvasExample1"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample1"
+                                >
+                                  Existing Knowledge
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Existing knowledge encompasses the vast
+                                  reservoir of information accumulated
+                                  throughout a lifetime. This includes facts,
+                                  concepts, skills, and memories acquired
+                                  through education, personal experiences, and
+                                  interactions with the world. It forms the
+                                  foundation for understanding, reasoning, and
+                                  making decisions. This knowledge base is
+                                  constantly being updated and refined as new
+                                  information is acquired and integrated.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Inaccuracy</h6>
+                                <p>
+                                  Existing knowledge can be inaccurate due to
+                                  misinformation, biases, and errors in memory.
+                                </p>
+                                <h6 class="display-9">Limited Perspective</h6>
+                                <p>
+                                  Knowledge acquired from limited experiences or
+                                  sources can lead to narrow-mindedness and an
+                                  inability to see alternative perspectives.
+                                </p>
+                                <h6 class="display-9">Obsoleteness</h6>
+                                <p>
+                                  Knowledge can become outdated as new
+                                  discoveries and advancements are made.
+                                </p>
+                                <h6 class="display-9">Confirmation Bias</h6>
+                                <p>
+                                  Existing knowledge can bias our interpretation
+                                  of new information, making it difficult to
+                                  consider alternative viewpoints.
+                                </p>
+                              </div>
                             </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Existing knowledge encompasses the vast reservoir of information accumulated throughout
-                                a lifetime. This includes facts, concepts, skills, and memories acquired through
-                                education, personal experiences, and interactions with the world. It forms the
-                                foundation for understanding, reasoning, and making decisions. This knowledge base is
-                                constantly being updated and refined as new information is acquired and integrated.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Inaccuracy</h6>
-                              <p>Existing knowledge can be inaccurate due to misinformation, biases, and errors in
-                                memory.</p>
-                              <h6 class="display-9">Limited Perspective</h6>
-                              <p>Knowledge acquired from limited experiences or sources can lead to narrow-mindedness
-                                and an inability to see alternative perspectives.</p>
-                              <h6 class="display-9">Obsoleteness</h6>
-                              <p>Knowledge can become outdated as new discoveries and advancements are made.</p>
-                              <h6 class="display-9">Confirmation Bias</h6>
-                              <p>Existing knowledge can bias our interpretation of new information, making it difficult
-                                to consider alternative viewpoints.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Second Internal Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Memories</h5>
+                            <p class="card-text">
+                              Recollections of past events, experiences, and
+                              emotions.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas2"
+                              aria-controls="offcanvasExample2"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas2"
+                              aria-labelledby="offcanvasExample2"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample2"
+                                >
+                                  Memories
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Memories are mental representations of past
+                                  events, experiences, and emotions. They can be
+                                  vivid and detailed, or vague and fleeting.
+                                  Memories play a crucial role in shaping our
+                                  understanding of ourselves and the world
+                                  around us. They influence our behavior, our
+                                  relationships, and our overall well-being.
+                                  Memories can be accessed consciously or
+                                  unconsciously, and they can be influenced by
+                                  various factors, such as emotions, mood, and
+                                  context.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Inaccuracy</h6>
+                                <p>
+                                  Memories are not always accurate
+                                  representations of past events. They can be
+                                  distorted by emotions, biases, and the passage
+                                  of time.
+                                </p>
+                                <h6 class="display-9">Selectivity</h6>
+                                <p>
+                                  We tend to remember events that are
+                                  emotionally significant or consistent with our
+                                  existing beliefs, leading to selective recall
+                                  and a biased view of the past.
+                                </p>
+                                <h6 class="display-9">False Memories</h6>
+                                <p>
+                                  It is possible to create false memories,
+                                  either intentionally or unintentionally.
+                                </p>
+                                <h6 class="display-9">Traumatic Memories</h6>
+                                <p>
+                                  Traumatic memories can be particularly
+                                  distressing and difficult to process,
+                                  potentially leading to emotional and
+                                  psychological difficulties.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Third Internal Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Emotions</h5>
+                            <p class="card-text">
+                              Subjective feelings that arise from interactions
+                              with the environment.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas3"
+                              aria-controls="offcanvasExample3"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas3"
+                              aria-labelledby="offcanvasExample3"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample3"
+                                >
+                                  Emotions
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Emotions are complex psychophysiological
+                                  experiences that involve a subjective feeling,
+                                  a physiological response, and a behavioral
+                                  expression. They are essential for human
+                                  survival and well-being. Emotions provide
+                                  valuable information about our internal state
+                                  and our relationship with the environment.
+                                  They motivate us to act, guide our social
+                                  interactions, and help us to adapt to changing
+                                  circumstances. Emotions can range from basic
+                                  emotions such as happiness, sadness, anger,
+                                  and fear, to more complex emotions such as
+                                  love, guilt, and shame.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Overwhelming Emotions</h6>
+                                <p>
+                                  Intense emotions such as anger, fear, or
+                                  anxiety can cloud judgment and lead to
+                                  irrational decisions.
+                                </p>
+                                <h6 class="display-9">Emotional Bias</h6>
+                                <p>
+                                  Emotions can bias our perceptions and
+                                  judgments, making it difficult to see
+                                  situations objectively.
+                                </p>
+                                <h6 class="display-9">Emotional Regulation</h6>
+                                <p>
+                                  Difficulty in managing emotions can lead to
+                                  problems in relationships, work, and overall
+                                  well-being.
+                                </p>
+                                <h6 class="display-9">
+                                  Emotional Manipulation
+                                </h6>
+                                <p>
+                                  Others may attempt to manipulate our emotions
+                                  to achieve their own goals.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Fourth Internal Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Internal Sensations</h5>
+                            <p class="card-text">
+                              Physical and mental feelings originating from
+                              within the body.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas4"
+                              aria-controls="offcanvasExample4"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas4"
+                              aria-labelledby="offcanvasExample4"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample4"
+                                >
+                                  Internal Sensations
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Internal sensations encompass the various
+                                  physical and mental feelings that originate
+                                  from within the body. This includes sensations
+                                  such as hunger, thirst, pain, fatigue, and
+                                  bodily tension. Internal sensations also
+                                  include mental states such as anxiety, stress,
+                                  and relaxation. These sensations provide
+                                  valuable information about our physical and
+                                  mental well-being. They can alert us to
+                                  potential problems, motivate us to take
+                                  action, and influence our overall mood and
+                                  behaviour.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Misinterpretation</h6>
+                                <p>
+                                  Internal sensations can sometimes be
+                                  misinterpreted, leading to unnecessary worry
+                                  or incorrect diagnoses.
+                                </p>
+                                <h6 class="display-9">Ignoring Sensations</h6>
+                                <p>
+                                  Ignoring or suppressing internal sensations
+                                  can have negative consequences for physical
+                                  and mental health.
+                                </p>
+                                <h6 class="display-9">Chronic Pain</h6>
+                                <p>
+                                  Chronic pain can significantly impact daily
+                                  life and emotional well-being.
+                                </p>
+                                <h6 class="display-9">
+                                  Difficulty in Distinguishing Sensations
+                                </h6>
+                                <p>
+                                  It can sometimes be difficult to distinguish
+                                  between different internal sensations, such as
+                                  anxiety and hunger.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- Second Internal Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Memories</h5>
-                          <p class="card-text">
-                            Recollections of past events, experiences, and emotions.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas2" aria-controls="offcanvasExample2">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas2"
-                            aria-labelledby="offcanvasExample2">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample2">
-                                Memories
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Memories are mental representations of past events, experiences, and emotions. They can
-                                be vivid and detailed, or vague and fleeting. Memories play a crucial role in shaping
-                                our understanding of ourselves and the world around us. They influence our behavior, our
-                                relationships, and our overall well-being. Memories can be accessed consciously or
-                                unconsciously, and they can be influenced by various factors, such as emotions, mood,
-                                and context.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Inaccuracy</h6>
-                              <p>Memories are not always accurate representations of past events. They can be distorted
-                                by emotions, biases, and the passage of time.</p>
-                              <h6 class="display-9">Selectivity</h6>
-                              <p>We tend to remember events that are emotionally significant or consistent with our
-                                existing beliefs, leading to selective recall and a biased view of the past.</p>
-                              <h6 class="display-9">False Memories</h6>
-                              <p>It is possible to create false memories, either intentionally or unintentionally.</p>
-                              <h6 class="display-9">Traumatic Memories</h6>
-                              <p>Traumatic memories can be particularly distressing and difficult to process,
-                                potentially leading to emotional and psychological difficulties.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion section on External Information -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    External
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#sourceAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <!-- First External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Social Media</h5>
+                            <p class="card-text">
+                              User-generated content and information shared on
+                              online platforms.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas5"
+                              aria-controls="offcanvasExample5"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas5"
+                              aria-labelledby="offcanvasExample5"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample5"
+                                >
+                                  Social Media
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Social media encompasses a wide range of
+                                  online platforms where users can share and
+                                  interact with information, including text,
+                                  images, videos, and audio. This includes
+                                  platforms like Facebook, Twitter, Instagram,
+                                  TikTok, and many others. Social media provides
+                                  a platform for individuals to connect with
+                                  others, share their thoughts and experiences,
+                                  and access information from a diverse range of
+                                  sources.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Misinformation</h6>
+                                <p>
+                                  Social media is a major source of
+                                  misinformation and disinformation, including
+                                  fake news, rumors, and propaganda.
+                                </p>
+                                <h6 class="display-9">
+                                  Echo Chambers & Filter Bubbles
+                                </h6>
+                                <p>
+                                  Algorithms on social media platforms can
+                                  create echo chambers and filter bubbles,
+                                  exposing users primarily to information that
+                                  confirms their existing beliefs.
+                                </p>
+                                <h6 class="display-9">
+                                  Cyberbullying and Harassment
+                                </h6>
+                                <p>
+                                  Cyberbullying and Harassment: Social media can
+                                  be a breeding ground for cyberbullying,
+                                  harassment, and online abuse.
+                                </p>
+                                <h6 class="display-9">
+                                  Addiction and Mental Health
+                                </h6>
+                                <p>
+                                  Excessive use of social media can lead to
+                                  addiction, anxiety, depression, and other
+                                  mental health issues.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- Third Internal Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Emotions</h5>
-                          <p class="card-text">
-                            Subjective feelings that arise from interactions with the environment.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas3" aria-controls="offcanvasExample3">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas3"
-                            aria-labelledby="offcanvasExample3">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample3">
-                                Emotions
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Emotions are complex psychophysiological experiences that involve a subjective feeling,
-                                a physiological response, and a behavioral expression. They are essential for human
-                                survival and well-being. Emotions provide valuable information about our internal state
-                                and our relationship with the environment. They motivate us to act, guide our social
-                                interactions, and help us to adapt to changing circumstances. Emotions can range from
-                                basic emotions such as happiness, sadness, anger, and fear, to more complex emotions
-                                such as love, guilt, and shame.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Overwhelming Emotions</h6>
-                              <p>Intense emotions such as anger, fear, or anxiety can cloud judgment and lead to
-                                irrational decisions.</p>
-                              <h6 class="display-9">Emotional Bias</h6>
-                              <p>Emotions can bias our perceptions and judgments, making it difficult to see situations
-                                objectively.</p>
-                              <h6 class="display-9">Emotional Regulation</h6>
-                              <p>Difficulty in managing emotions can lead to problems in relationships, work, and
-                                overall well-being.</p>
-                              <h6 class="display-9">Emotional Manipulation</h6>
-                              <p>Others may attempt to manipulate our emotions to achieve their own goals.</p>
+                      <!-- Second External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Mainstream Media</h5>
+                            <p class="card-text">
+                              News and information disseminated by traditional
+                              media outlets.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas6"
+                              aria-controls="offcanvasExample6"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas6"
+                              aria-labelledby="offcanvasExample6"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample6"
+                                >
+                                  Mainstream Media
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Mainstream media refers to traditional media
+                                  outlets such as newspapers, television, radio,
+                                  and news websites. These outlets play a
+                                  crucial role in informing the public about
+                                  current events, providing in-depth analysis,
+                                  and holding those in power accountable.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Bias</h6>
+                                <p>
+                                  Mainstream media outlets can exhibit biases in
+                                  their reporting, reflecting the viewpoints and
+                                  agendas of their owners, advertisers, and
+                                  journalists.
+                                </p>
+                                <h6 class="display-9">
+                                  Sensationalism and Clickbait
+                                </h6>
+                                <p>
+                                  The pursuit of viewership and clicks can lead
+                                  to sensationalism, clickbait headlines, and an
+                                  overemphasis on negative or sensational news.
+                                </p>
+                                <h6 class="display-9">
+                                  Limited Diversity of Voices
+                                </h6>
+                                <p>
+                                  Mainstream media outlets may not adequately
+                                  represent the diverse perspectives and
+                                  experiences of all members of society.
+                                </p>
+                                <h6 class="display-9">Corporate Influence</h6>
+                                <p>
+                                  The influence of corporate interests can shape
+                                  media coverage and limit investigative
+                                  journalism.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- Fourth Internal Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Internal Sensations</h5>
-                          <p class="card-text">
-                            Physical and mental feelings originating from within the body.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas4" aria-controls="offcanvasExample4">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas4"
-                            aria-labelledby="offcanvasExample4">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample4">
-                                Internal Sensations
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                      <!-- Third External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Friends and Family</h5>
+                            <p class="card-text">
+                              Information and perspectives shared within
+                              personal relationships.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas7"
+                              aria-controls="offcanvasExample7"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas7"
+                              aria-labelledby="offcanvasExample7"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample7"
+                                >
+                                  Friends and Family
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Friends and family are valuable sources of
+                                  information, providing insights into personal
+                                  experiences, perspectives, and social
+                                  networks. These relationships offer
+                                  opportunities for social support, emotional
+                                  connection, and the exchange of ideas and
+                                  information.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Confirmation Bias</h6>
+                                <p>
+                                  We tend to gravitate towards friends and
+                                  family who share similar beliefs, leading to
+                                  confirmation bias and limited exposure to
+                                  diverse perspectives.
+                                </p>
+                                <h6 class="display-9">Emotional Bias</h6>
+                                <p>
+                                  Personal relationships can be influenced by
+                                  emotions such as love, loyalty, and
+                                  resentment, which can bias the sharing and
+                                  interpretation of information.
+                                </p>
+                                <h6 class="display-9">Limited Objectivity</h6>
+                                <p>
+                                  Information shared within personal
+                                  relationships may lack objectivity and be
+                                  influenced by personal biases and agendas.
+                                </p>
+                                <h6 class="display-9">
+                                  Spread of Misinformation
+                                </h6>
+                                <p>
+                                  Misinformation and rumors can easily spread
+                                  within social networks, particularly within
+                                  close-knit communities.
+                                </p>
+                              </div>
                             </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Internal sensations encompass the various physical and mental feelings that originate
-                                from within the body. This includes sensations such as hunger, thirst, pain, fatigue,
-                                and bodily tension. Internal sensations also include mental states such as anxiety,
-                                stress, and relaxation. These sensations provide valuable information about our physical
-                                and mental well-being. They can alert us to potential problems, motivate us to take
-                                action, and influence our overall mood and behaviour.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Misinterpretation</h6>
-                              <p>Internal sensations can sometimes be misinterpreted, leading to unnecessary worry or
-                                incorrect diagnoses.</p>
-                              <h6 class="display-9">Ignoring Sensations</h6>
-                              <p>Ignoring or suppressing internal sensations can have negative consequences for physical
-                                and mental health.</p>
-                              <h6 class="display-9">Chronic Pain</h6>
-                              <p>Chronic pain can significantly impact daily life and emotional well-being.</p>
-                              <h6 class="display-9">Difficulty in Distinguishing Sensations</h6>
-                              <p>It can sometimes be difficult to distinguish between different internal sensations,
-                                such as anxiety and hunger.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Fourth External Source Card -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h5 class="card-title">Social Climate</h5>
+                            <p class="card-text">
+                              The prevailing social, intellectual, and moral
+                              climate.
+                            </p>
+                            <!-- Button which opens an off-canvas -->
+                            <button
+                              class="btn btn-primary"
+                              type="button"
+                              data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvas8"
+                              aria-controls="offcanvasExample8"
+                            >
+                              More Info
+                            </button>
+                            <!-- The off-canvas Bootstrap element -->
+                            <div
+                              class="offcanvas offcanvas-start"
+                              tabindex="-1"
+                              id="offcanvas8"
+                              aria-labelledby="offcanvasExample8"
+                            >
+                              <div class="offcanvas-header">
+                                <h5
+                                  class="offcanvas-title"
+                                  id="offcanvasExample8"
+                                >
+                                  Social Climate
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="offcanvas"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                <p>
+                                  Current Trends and Social Climate refer to the
+                                  prevailing social, intellectual, and moral
+                                  climate. It encompasses the shared values,
+                                  beliefs, attitudes, and trends that shape the
+                                  collective consciousness of a society. This
+                                  includes popular culture, social movements,
+                                  political ideologies, and prevailing social
+                                  issues. This "social climate" influences art,
+                                  music, literature, fashion, and other cultural
+                                  expressions, reflecting the dominant ideas and
+                                  concerns of the time.
+                                </p>
+                                <h5 class="display-8 mb-4">Potential Issues</h5>
+                                <h6 class="display-9">Groupthink</h6>
+                                <p>
+                                  The current social climate can encourage
+                                  conformity and discourage independent thought,
+                                  leading to groupthink and a lack of critical
+                                  thinking.
+                                </p>
+                                <h6 class="display-9">Volatility</h6>
+                                <p>
+                                  Rapid Change and Volatility: The social
+                                  climate is constantly evolving, making it
+                                  difficult to keep up with the rapid pace of
+                                  change and adapt to new trends and ideas.
+                                </p>
+                                <h6 class="display-9">
+                                  Exclusion and Marginalization
+                                </h6>
+                                <p>
+                                  The prevailing social values and norms can
+                                  exclude and marginalize certain groups within
+                                  society, leading to social and cultural
+                                  divisions.
+                                </p>
+                                <h6 class="display-9">
+                                  Influence of Technology
+                                </h6>
+                                <p>
+                                  Technology is increasingly shaping the social
+                                  climate, accelerating the spread of ideas and
+                                  trends while also raising concerns about
+                                  privacy, surveillance, and the digital divide.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -296,367 +854,242 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  External
+          </div>
+        </div>
+      </section>
+
+      <!-- Reasoning Section -->
+      <section id="reasoning" class="container my-4">
+        <div class="row">
+          <div class="col-12 text-center my-4">
+            <h3 class="display-6">Reasoning</h3>
+          </div>
+          <div class="col-12 col-lg-4 order-lg-2 py-2">
+            <h4 class="display-8">What do you do with this information?</h4>
+            <p class="mb-4">
+              Evaluating the information is crucial. We must carefully examine
+              it for biases, both explicit and implicit, and consider
+              alternative perspectives to avoid confirmation bias. Thoroughly
+              examining the information for inconsistencies and contradictions,
+              both within the source itself and with other credible sources, is
+              essential. We must also rigorously assess the logic of the
+              arguments presented, identifying any fallacies. Once evaluated, we
+              can synthesize information from various sources, considering their
+              strengths and weaknesses, to form our own informed conclusions.
+              Reasoning is not static. We must remain open to new information,
+              revise our conclusions as needed, and engage in dialogue with
+              others to refine our understanding. Continuously honing our
+              critical thinking skills through practice and reflection is
+              essential.
+            </p>
+          </div>
+          <!-- Tab headings -->
+          <div class="col-12 col-lg-8 order-lg-1">
+            <ul class="nav nav-tabs" id="reasoningTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="tab1-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab1"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab1"
+                  aria-selected="true"
+                >
+                  Deductive
                 </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#sourceAccordion">
-                <div class="accordion-body">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <!-- First External Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Social Media</h5>
-                          <p class="card-text">
-                            User-generated content and information shared on online platforms.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas5" aria-controls="offcanvasExample5">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas5"
-                            aria-labelledby="offcanvasExample5">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample5">
-                                Social Media
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Social media encompasses a wide range of online platforms where users can share and
-                                interact with information, including text, images, videos, and audio. This includes
-                                platforms like Facebook, Twitter, Instagram, TikTok, and many others. Social media
-                                provides a platform for individuals to connect with others, share their thoughts and
-                                experiences, and access information from a diverse range of sources.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Misinformation</h6>
-                              <p>Social media is a major source of misinformation and disinformation, including fake
-                                news, rumors, and propaganda.</p>
-                              <h6 class="display-9">Echo Chambers & Filter Bubbles</h6>
-                              <p>Algorithms on social media platforms can create echo chambers and filter bubbles,
-                                exposing users primarily to information that confirms their existing beliefs.</p>
-                              <h6 class="display-9">Cyberbullying and Harassment</h6>
-                              <p>Cyberbullying and Harassment: Social media can be a breeding ground for cyberbullying,
-                                harassment, and online abuse.</p>
-                              <h6 class="display-9">Addiction and Mental Health</h6>
-                              <p>Excessive use of social media can lead to addiction, anxiety, depression, and other
-                                mental health issues.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Second External Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Mainstream Media</h5>
-                          <p class="card-text">
-                            News and information disseminated by traditional media outlets.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas6" aria-controls="offcanvasExample6">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas6"
-                            aria-labelledby="offcanvasExample6">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample6">
-                                Mainstream Media
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Mainstream media refers to traditional media outlets such as newspapers, television,
-                                radio, and news websites. These outlets play a crucial role in informing the public
-                                about current events, providing in-depth analysis, and holding those in power
-                                accountable.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Bias</h6>
-                              <p>Mainstream media outlets can exhibit biases in their reporting, reflecting the
-                                viewpoints and agendas of their owners, advertisers, and journalists.</p>
-                              <h6 class="display-9">Sensationalism and Clickbait</h6>
-                              <p>The pursuit of viewership and clicks can lead to sensationalism, clickbait headlines,
-                                and an overemphasis on negative or sensational news.</p>
-                              <h6 class="display-9">Limited Diversity of Voices</h6>
-                              <p>Mainstream media outlets may not adequately represent the diverse perspectives and
-                                experiences of all members of society.</p>
-                              <h6 class="display-9">Corporate Influence</h6>
-                              <p>The influence of corporate interests can shape media coverage and limit investigative
-                                journalism.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Third External Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Friends and Family</h5>
-                          <p class="card-text">
-                            Information and perspectives shared within personal relationships.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas7" aria-controls="offcanvasExample7">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas7"
-                            aria-labelledby="offcanvasExample7">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample7">
-                                Friends and Family
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Friends and family are valuable sources of information, providing insights into personal
-                                experiences, perspectives, and social networks. These relationships offer opportunities
-                                for social support, emotional connection, and the exchange of ideas and information.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Confirmation Bias</h6>
-                              <p>We tend to gravitate towards friends and family who share similar beliefs, leading to
-                                confirmation bias and limited exposure to diverse perspectives.</p>
-                              <h6 class="display-9">Emotional Bias</h6>
-                              <p>Personal relationships can be influenced by emotions such as love, loyalty, and
-                                resentment, which can bias the sharing and interpretation of information.</p>
-                              <h6 class="display-9">Limited Objectivity</h6>
-                              <p>Information shared within personal relationships may lack objectivity and be influenced
-                                by personal biases and agendas.</p>
-                              <h6 class="display-9">Spread of Misinformation</h6>
-                              <p>Misinformation and rumors can easily spread within social networks, particularly within
-                                close-knit communities.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Fourth External Source Card -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title">Social Climate</h5>
-                          <p class="card-text">
-                            The prevailing social, intellectual, and moral climate.
-                          </p>
-                          <!-- Button which opens an off-canvas -->
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvas8" aria-controls="offcanvasExample8">
-                            More Info
-                          </button>
-                          <!-- The off-canvas Bootstrap element -->
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas8"
-                            aria-labelledby="offcanvasExample8">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExample8">
-                                Social Climate
-                              </h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <p>
-                                Current Trends and Social Climate refer to the prevailing social, intellectual, and
-                                moral climate. It encompasses the shared values, beliefs, attitudes, and trends that
-                                shape the collective consciousness of a society. This includes popular culture, social
-                                movements, political ideologies, and prevailing social issues. This "social climate"
-                                influences art, music, literature, fashion, and other cultural expressions, reflecting
-                                the dominant ideas and concerns of the time.
-                              </p>
-                              <h5 class="display-8 mb-4">Potential Issues</h5>
-                              <h6 class="display-9">Groupthink</h6>
-                              <p>The current social climate can encourage conformity and discourage independent thought,
-                                leading to groupthink and a lack of critical thinking.</p>
-                              <h6 class="display-9">Volatility</h6>
-                              <p>Rapid Change and Volatility: The social climate is constantly evolving, making it
-                                difficult to keep up with the rapid pace of change and adapt to new trends and ideas.
-                              </p>
-                              <h6 class="display-9">Exclusion and Marginalization</h6>
-                              <p>The prevailing social values and norms can exclude and marginalize certain groups
-                                within society, leading to social and cultural divisions.</p>
-                              <h6 class="display-9">Influence of Technology</h6>
-                              <p>Technology is increasingly shaping the social climate, accelerating the spread of ideas
-                                and trends while also raising concerns about privacy, surveillance, and the digital
-                                divide.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab2-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab2"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab2"
+                  aria-selected="false"
+                >
+                  Inductive
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tab3-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab3"
+                  type="button"
+                  role="tab"
+                  aria-controls="tab3"
+                  aria-selected="false"
+                >
+                  Abductive
+                </button>
+              </li>
+            </ul>
+            <!-- Tab content -->
+            <div class="tab-content" id="reasoningTabsContent">
+              <div
+                class="tab-pane fade show active"
+                id="tab1"
+                role="tabpanel"
+                aria-labelledby="tab1-tab"
+              >
+                <h5 class="display-8 my-4">The Path of Certainty</h5>
+                <p class="mb-4">
+                  Deductive reasoning, akin to a master architect meticulously
+                  constructing a building, proceeds from established truths to
+                  inevitable conclusions. It operates within the realm of
+                  absolute certainty, where the validity of the premises
+                  guarantees the veracity of the conclusion. This form of
+                  reasoning is the bedrock of mathematics and formal logic,
+                  where axioms and established theorems serve as the foundation
+                  for deriving new truths.
+                </p>
+                <p class="mb-4">
+                  For instance, in a syllogism, if the premises "All men are
+                  mortal" and "Socrates is a man" are accepted as true, then the
+                  conclusion, "Socrates is mortal," inescapably follows.
+                  Deductive reasoning, while powerful, is limited by its
+                  reliance on the truth of its initial premises. If even one
+                  premise is false, the entire deductive structure can crumble.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab2"
+                role="tabpanel"
+                aria-labelledby="tab2-tab"
+              >
+                <h5 class="display-8 my-4">The Leap of Faith</h5>
+                <p class="mb-4">
+                  Inductive reasoning, in contrast, is more akin to a detective
+                  piecing together a puzzle from scattered clues. It involves
+                  observing specific instances and then generalizing from those
+                  observations to form broader conclusions.
+                </p>
+                <p class="mb-4">
+                  We encounter inductive reasoning frequently in everyday life.
+                  For example, if we observe that the sun has risen every
+                  morning for as long as we can remember, we might inductively
+                  conclude that the sun will rise tomorrow. However, inductive
+                  reasoning does not guarantee absolute certainty. While the
+                  observed patterns may strongly suggest a particular
+                  conclusion, there's always the possibility of exceptions or
+                  unforeseen circumstances. The classic example of this is the
+                  observation that all swans are white, a conclusion that was
+                  shattered upon the discovery of black swans in Australia.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tab3"
+                role="tabpanel"
+                aria-labelledby="tab3-tab"
+              >
+                <h5 class="display-8 my-4">
+                  The Quest for the Best Explanation
+                </h5>
+                <p class="mb-4">
+                  Abductive reasoning, often described as "inference to the best
+                  explanation," resembles a detective investigating a crime
+                  scene. It involves identifying the most plausible explanation
+                  for a given set of observations. This type of reasoning is
+                  prevalent in scientific inquiry and everyday problem-solving.
+                  When faced with an unexpected event, we instinctively search
+                  for the most likely cause.
+                </p>
+                <p class="mb-4">
+                  For instance, if we find the grass wet in the morning, we
+                  might abductively conclude that it rained overnight. While
+                  this explanation is plausible, it may not be the only
+                  possibility. The grass could have been wet due to a sprinkler,
+                  a leaky hose, or even dew. Abductive reasoning, therefore,
+                  involves weighing different possibilities and selecting the
+                  most likely explanation based on available evidence and prior
+                  knowledge.
+                </p>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Reasoning Section -->
-    <section id="reasoning" class="container my-4">
-      <div class="row">
-        <div class="col-12 text-center my-4">
-          <h3 class="display-6">Reasoning</h3>
+    <!-- Footer -->
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              #DYR <i>Do Your Research!</i> is dedicated to supporting fellow
+              humans in their quest for truth and understanding. We provide
+              resources and tools to help you think critically and make informed
+              decisions.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a href="#">Contribute</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 order-lg-2">
-          <h4 class="display-8">What do you do with this information?</h4>
-          <p class="mb-4">
-            Evaluating the information is crucial. We must carefully examine it for biases, both explicit and implicit,
-            and consider alternative perspectives to avoid confirmation bias. Thoroughly examining the information for
-            inconsistencies and contradictions, both within the source itself and with other credible sources, is
-            essential. We must also rigorously assess the logic of the arguments presented, identifying any fallacies.
-            Once evaluated, we can synthesize information from various sources, considering their strengths and
-            weaknesses, to form our own informed conclusions. Reasoning is not static. We must remain open to new
-            information, revise our conclusions as needed, and engage in dialogue with others to refine our
-            understanding. Continuously honing our critical thinking skills through practice and reflection is
-            essential.
-          </p>
-        </div>
-        <!-- Tab headings -->
-        <div class="col-12 col-lg-8 order-lg-1">
-          <ul class="nav nav-tabs" id="reasoningTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
-                role="tab" aria-controls="tab1" aria-selected="true">Deductive</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
-                role="tab" aria-controls="tab2" aria-selected="false">Inductive</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
-                role="tab" aria-controls="tab3" aria-selected="false">Abductive</button>
-            </li>
-          </ul>
-          <!-- Tab content -->
-          <div class="tab-content" id="reasoningTabsContent">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-              <h5 class="display-8 my-4">The Path of Certainty</h5>
-              <p class="mb-4">Deductive reasoning, akin to a master architect meticulously constructing a building,
-                proceeds from
-                established truths to inevitable conclusions. It operates within the realm of absolute certainty, where
-                the validity of the premises guarantees the veracity of the conclusion. This form of reasoning is the
-                bedrock of mathematics and formal logic, where axioms and established theorems serve as the foundation
-                for deriving new truths.</p>
-              <p class="mb-4">For instance, in a syllogism, if the premises "All men are mortal" and
-                "Socrates is a man" are accepted as true, then the conclusion, "Socrates is mortal," inescapably
-                follows. Deductive reasoning, while powerful, is limited by its reliance on the truth of its initial
-                premises. If even one premise is false, the entire deductive structure can crumble.</p>
-            </div>
-            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-              <h5 class="display-8 my-4">The Leap of Faith</h5>
-              <p class="mb-4">Inductive reasoning, in contrast, is more akin to a detective piecing together a puzzle
-                from scattered clues. It involves observing specific instances and then generalizing from those
-                observations to form broader conclusions.</p>
-              <p class="mb-4">We encounter inductive reasoning frequently in everyday life. For example, if we observe
-                that the sun
-                has risen every morning for as long as we can remember, we might inductively conclude that the sun will
-                rise tomorrow. However, inductive reasoning does not guarantee absolute certainty. While the observed
-                patterns may strongly suggest a particular conclusion, there's always the possibility of exceptions or
-                unforeseen circumstances. The classic example of this is the observation that all swans are white, a
-                conclusion that was shattered upon the discovery of black swans in Australia.
-              </p>
-            </div>
-            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-              <h5 class="display-8 my-4">The Quest for the Best Explanation</h5>
-              <p class="mb-4">Abductive reasoning, often described as "inference to the best explanation," resembles a
-                detective investigating a crime scene. It involves identifying the most plausible explanation for a
-                given set of observations. This type of reasoning is prevalent in scientific inquiry and everyday
-                problem-solving. When faced with an unexpected event, we instinctively search for the most likely cause.
-              </p>
-              <p class="mb-4">For instance, if we find the grass wet in the morning, we might abductively conclude that it rained
-                overnight. While this explanation is plausible, it may not be the only possibility. The grass could have
-                been wet due to a sprinkler, a leaky hose, or even dew. Abductive reasoning, therefore, involves
-                weighing different possibilities and selecting the most likely explanation based on available evidence
-                and prior knowledge.
-              </p>
-            </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2025 All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a class="youtube" href="#"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="mt-auto">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">
-            #DYR <i>Do Your Research!</i> is dedicated to supporting fellow
-            humans in their quest for truth and understanding. We provide
-            resources and tools to help you think critically and make informed
-            decisions.
-          </p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="#">Contact Us</a></li>
-            <li>
-              <a href="#">Contribute</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">
-            Copyright &copy; 2025 All Rights Reserved
-          </p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li>
-              <a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li>
-              <a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Font Awesome JS -->
-  <script src="https://kit.fontawesome.com/5c14c611eb.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Font Awesome JS -->
+    <script
+      src="https://kit.fontawesome.com/5c14c611eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

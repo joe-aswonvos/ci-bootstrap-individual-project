@@ -14,7 +14,8 @@
 
 /* Global Styles */
 
-*{border: 1px solid red}
+/* Style to investigate flexbox/bootstrap issues */
+/* *{border: 1px solid red} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--primary-font);
