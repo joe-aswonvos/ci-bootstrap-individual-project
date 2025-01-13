@@ -1309,11 +1309,11 @@
             decisions.
           </p>
         </div>
-
+        <!-- Modal Contact Form Link -->
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -1326,7 +1326,7 @@
             Copyright &copy; 2025 All Rights Reserved
           </p>
         </div>
-
+        <!-- Social Icons -->
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
             <li>
@@ -1345,6 +1345,45 @@
         </div>
       </div>
     </div>
+
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank You Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="thankYouToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Thank You</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Thank's for getting in touch!
+        </div>
+      </div>
+    </div>
+
   </footer>
 
   <!-- Font Awesome JS -->
@@ -1353,6 +1392,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- Bootstrap JS to show toast on form submission - via Copilot -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var toast = new bootstrap.Toast(document.getElementById('thankYouToast'));
+      toast.show();
+      var modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+      modal.hide();
+    });
+  </script>
 </body>
 
 </html>

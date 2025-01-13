@@ -112,7 +112,7 @@ section {
     border: 1px solid var(--primary-color);
 }
 
-#sourceAccordion .btn{
+#sources {
     border-radius: 0;
 }
 
@@ -350,6 +350,31 @@ footer .social-icons a {
 
 .social-icons a.youtube:hover {
     background-color: red;
+}
+
+/* Contact Form */
+
+#contactModal .modal-content {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+#contactModal .btn {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+#thankYouToast .toast-header{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+#thankYouToast .btn-close{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 @media (max-width:767px) {
