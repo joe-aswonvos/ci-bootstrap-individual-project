@@ -5,7 +5,7 @@
 :root {
     --primary-font: "Tektur", sans-serif;
     --secondary-font: "Quicksand", cursive;
-    --primary-color:  chocolate;
+    --primary-color:  #A55318; /* Originally #d2691e */
     --secondary-color: black;
     --tertiary-color: #e9edf0;
     --highlight-color: chartreuse;
@@ -13,9 +13,6 @@
   }
 
 /* Global Styles */
-
-/* Style to investigate flexbox/bootstrap issues */
-/* *{border: 1px solid red} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--primary-font);
@@ -29,7 +26,7 @@ body {
 
 .headings {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     padding: 0.5rem 0;
 }
 
@@ -108,12 +105,12 @@ section {
 #sourceAccordion .accordion-button:not(collapsed) {
     background-color: var(--primary-color);
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 #sourceAccordion .accordion-button.collapsed {
     background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
@@ -123,7 +120,7 @@ section {
 
 .btn[data-bs-toggle="offcanvas"] {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-family: var(--primary-font);
     border: 1px solid var(--primary-color);
 }
@@ -144,12 +141,12 @@ section {
 
 #reasoning .nav-link.active {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 #reasoning .nav-link {
     background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
@@ -165,7 +162,7 @@ section {
 }
 
 #fallacies .card:hover .card-title {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 #fallacies .card:hover {
     background-color: var(--primary-color);
@@ -206,7 +203,7 @@ footer {
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 footer hr {
@@ -227,11 +224,11 @@ footer h6 {
 }
 
 footer a {
-    color:var(--secondary-color);
+    color:var(--tertiary-color);
 }
 
 footer a:hover {
-    color: var(--highlight-color-light);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -245,13 +242,13 @@ footer a:hover {
 }
 
 .footer-links a {
-    color: var(--secondary-color);   
+    color: var(--tertiary-color);   
 }
 
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: var(--highlight-color-light);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
