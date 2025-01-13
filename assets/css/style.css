@@ -112,6 +112,10 @@ section {
     border: 1px solid var(--primary-color);
 }
 
+#sourceAccordion .btn{
+    border-radius: 0;
+}
+
 .btn[data-bs-toggle="offcanvas"] {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -163,6 +167,14 @@ section {
     color: var(--tertiary-color);
     border: var(--primary-color);
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#fallacies .offcanvas {
+    margin-top: 0%;
+}
+
+#fallacies .offcanvas-start {
+    padding: 0%;
 }
 
 /* Verdict Section */
