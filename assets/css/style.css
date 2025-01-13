@@ -43,6 +43,10 @@ body {
     border-radius: 0   ;
 }
 
+section {
+    scroll-margin-top: 74px;
+}
+
 /* Nav Section */
 
 #nav {
