@@ -96,6 +96,10 @@ section {
 
 /* Sources Section */
 
+#sources .card-body .btn {
+    border-radius: 0;
+}
+
 #sourceAccordion .accordion-body{
     background-color: var(--tertiary-color);
 }
