@@ -33,6 +33,9 @@ Tasks
 
 - Utilize Bootstrap and responsive design principles to ensure the website is accessible across devices.
 - Arrange the site layout and navigation based on best practices, ensuring all key sections are easily accessible.
+
+AI - Ensure the website is easily navigable and fully responsive across various devices.
+
 ---
 
 #### User Story 2 - Impactful First Impression
@@ -49,6 +52,9 @@ Tasks
 
 - Using Bootstrap, construct a responsive, screen width hero section.
 - Utilising available tools, include an image and text for this section.
+
+AI - As a first-time user of the website, the first view of the site should engage me with a hero section containing an appropriate image and text.
+
 ---
 
 #### User Story 3 - Useful Content in a Logical Order
@@ -70,6 +76,9 @@ Tasks
 - Using Bootstrap, construct responsive sections to hold the information, utilising a variety of methods.
 - Utilising available tools, populate these sections with relevant information.
 - Ensure detail is available to users through pop-up or similar functionality.
+
+AI - As a user, I should be able to navigate through logically ordered content sections to enhance my understanding of critical thinking concepts.
+
 ---
 
 ### Should Have
@@ -89,6 +98,9 @@ Tasks
 
 - Using Bootstrap, build the footer.
 - Following best practice, add the social media links (new page, noopener, aria-label etc.).
+
+AI - As a user, I should have access to a responsive footer with an about section and social media links.
+
 ---
 
 ### Could Have
@@ -107,6 +119,9 @@ Tasks
 
 - Design and implement a contact form, remaining within the same HTML document.
 - Design and implement a mechanism to give the user feedback that a form has been submitted.
+
+AI - As a user, I should be able to contact the website to provide feedback or report errors through a functional contact form.
+
 ---
 
 #### User Story 6 - In line links to wikipedia entries
@@ -123,6 +138,9 @@ Tasks
 
 - Identify 20 terms or concepts taken as assumed knowledge in the content and link to relevant articles on Wikipedia
 - Update the contact form to enable users to suggest further unfamiliar terms to be linked
+
+AI - As a user, I should be able to click on unfamiliar terms to access reputable sources like Wikipedia for more information.
+
 ---
 
 ## Design Decisions
@@ -134,9 +152,25 @@ There are a number of constraints on the design of the project based on the lear
 - The project should be deployed on GitHub pages
 - Wherever possible we should be utilising AI to improve our efficiency.
 
+AI - The design of the project is constrained by specific learning outcomes, including the requirement for a single-page HTML file, full utilization of the Bootstrap framework, HTML and CSS only, deployment on GitHub Pages, and leveraging AI tools for efficiency.
+
 ### Wireframes
 
+AI - Building wireframes is crucial in the design process as it allows for the visualization of the layout and structure of a project, ensuring that all elements are strategically placed and user experience is optimized before development begins.
+
+AI - Responsive design is crucial as it ensures that a website provides an optimal viewing experience across a wide range of devices, enhancing usability and accessibility for all users.
+
+#### Mobile Layout
+
+The intended mobile layout is a straightforward vertically scrolling site, with opportunities to click on items and open offcanvas elements for more information.
+
+#### Desktop Layour
+
+The intended desktop layout takes advantage of increased screen real-estate to put content side by side under the section headers, to prevent undue repitition of the sections, different Bootstrap elements and ordering will be used for variety.
+
 ### Colour Palette
+
+AI - The importance of color palette and contrast in web design lies in ensuring readability, accessibility, and visual appeal, which are crucial for providing an inclusive and engaging user experience.
 
 I had originally chosen a simple palette of orange, black and a slight off-white;
 
@@ -149,6 +183,8 @@ However on accessibility testing it became apparent that the contrast between th
 This caused some issues of its own when the brown was the text colour on the black background, and a general 'flip' between the colours was required to maintain readability.
 
 ### Font
+
+AI - Choosing the right font for a website is crucial as it impacts readability, user experience, and the overall aesthetic appeal, ensuring that the content is accessible and engaging for all users.
 
 ### Images
 
@@ -186,11 +222,11 @@ AI - Using an AI-generated image allows for more customization and uniqueness co
 
 ### Navigation
 
-### Must Have's
+### Content
 
-### Should Have's
+### Styling
 
-### Could Have's
+### Footer/Form
 
 ## Testing and Validation
 
