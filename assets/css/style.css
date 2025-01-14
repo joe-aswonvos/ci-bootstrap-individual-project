@@ -53,10 +53,21 @@ section {
 
 #nav .navbar-brand {
     font-size: 2rem;
+    color: var(--tertiary-color);
 }
 
 #nav .navbar-nav .nav-link {
     font-size: 1.2rem;
+    color: var(--tertiary-color);
+}
+
+#nav .navbar-toggler {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+#nav .navbar-toggler-icon {
+    background-color: var(--primary-color);
 }
 
 #nav .navbar-nav .nav-link:hover {
@@ -65,6 +76,7 @@ section {
 
 #nav {
     background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 /* Hero Section */
