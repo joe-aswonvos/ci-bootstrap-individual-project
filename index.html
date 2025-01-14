@@ -1319,6 +1319,8 @@
       </div>
       <hr />
     </div>
+
+    
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
@@ -1363,6 +1365,18 @@
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" autocomplete="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="request">Request Explanation</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

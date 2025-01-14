@@ -26,6 +26,13 @@ AI - Ultimately, the goal is to help users make informed decisions and better na
 
 ## Design Decisions
 
+There are a number of constraints on the design of the project based on the learning outcomes we are required to demonstrate, these include;
+- The project should be one-page, I have interpreted this literally, as being a single page HTML file.
+- We should be fully utilising the benefits of the Bootstrap framework.
+- The project should be HTML and CSS only
+- The project should be deployed on GitHub pages
+- Wherever possible we should be utilising AI to improve our efficiency.
+
 ### Wireframes
 
 ### Colour Palette
