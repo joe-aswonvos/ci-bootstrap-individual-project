@@ -191,6 +191,7 @@ section {
     color: var(--tertiary-color);
     border: var(--primary-color);
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    cursor: pointer;
 }
 
 #fallacies .offcanvas {
