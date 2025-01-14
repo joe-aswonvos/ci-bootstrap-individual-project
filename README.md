@@ -15,14 +15,115 @@ AI - Ultimately, the goal is to help users make informed decisions and better na
 
 ## User Stories
 
-
-
+User stories were outlined on a [kanban board on GitHub](https://github.com/users/joe-aswonvos/projects/3/views/1?layout_template=board)
 
 ### Must Have
 
+#### User Story 1 - User Friendly Navigation and Responsive Design
+---
+
+As a first-time visitor, I need easy navigation and a user friendly design, including a responsive layout for my device, so that I can find information quickly and efficiently without frustration
+
+Acceptance Criteria
+
+- The website is fully responsive across various devices and screen sizes.
+- Site layout and navigation are intuitive, allowing easy access to different sections.
+
+Tasks
+
+- Utilize Bootstrap and responsive design principles to ensure the website is accessible across devices.
+- Arrange the site layout and navigation based on best practices, ensuring all key sections are easily accessible.
+---
+
+#### User Story 2 - Impactful First Impression
+---
+
+As a first-time user of the website, the first view of the site should engage me.
+
+Acceptance Criteria
+
+- The top of the site contains a hero section.
+- The hero section holds an appropriate image and text.
+
+Tasks
+
+- Using Bootstrap, construct a responsive, screen width hero section.
+- Utilising available tools, include an image and text for this section.
+---
+
+#### User Story 3 - Useful Content in a Logical Order
+---
+
+As a user of the website, reading from top to bottom should take me through a logical process to parse information, with opportunities to find out more detail.
+
+Acceptance Criteria
+
+- Page contains sections to aid thinking on:
+    - Sources.
+    - Reasoning.
+    - Logical Fallacies.
+    - Drawing Conclusions.
+    - Options to deepen understanding.
+
+Tasks
+
+- Using Bootstrap, construct responsive sections to hold the information, utilising a variety of methods.
+- Utilising available tools, populate these sections with relevant information.
+- Ensure detail is available to users through pop-up or similar functionality.
+---
+
 ### Should Have
 
+#### User Story 4 - Footer w/About Section and Social Links
+---
+
+As a user, should I wish to follow the site, I should have easily visible information to the relevant social media channels.
+
+Acceptance Criteria
+
+- Responsive footer applied to the page.
+- Footer contains brief about section.
+- Footer contains links to relevant social media channels.
+
+Tasks
+
+- Using Bootstrap, build the footer.
+- Following best practice, add the social media links (new page, noopener, aria-label etc.).
+---
+
 ### Could Have
+
+#### User Story 5 - Contact Form
+---
+
+As a user, I should be able to contact the website to advise of errors, provide feedback etc.
+
+Acceptance Criteria
+
+- Functional Contact form in the footer section.
+- Positive user feedback on form submission.
+
+Tasks
+
+- Design and implement a contact form, remaining within the same HTML document.
+- Design and implement a mechanism to give the user feedback that a form has been submitted.
+---
+
+#### User Story 6 - In line links to wikipedia entries
+---
+
+As a user, there may be words or themes I am un-familar with, I should be able to click on those items to a reputable source of information.
+
+Acceptance Criteria
+
+- Potentially unfamiliar terms in the text are linked to wikipedia topics on the subject
+- User contact form includes this option as a dropdown.
+
+Tasks
+
+- Identify 20 terms or concepts taken as assumed knowledge in the content and link to relevant articles on Wikipedia
+- Update the contact form to enable users to suggest further unfamiliar terms to be linked
+---
 
 ## Design Decisions
 
@@ -36,6 +137,16 @@ There are a number of constraints on the design of the project based on the lear
 ### Wireframes
 
 ### Colour Palette
+
+I had originally chosen a simple palette of orange, black and a slight off-white;
+
+![Colour Palette Pre Adjustment](assets/images/dyr-pre-accessibility-palette.png)
+
+However on accessibility testing it became apparent that the contrast between the orange and the black/white was insufficient, and a slight change was needed.
+
+![Colour Palette Post Adjustment](assets/images/dyr-post-accessibility-palette.png)
+
+This caused some issues of its own when the brown was the text colour on the black background, and a general 'flip' between the colours was required to maintain readability.
 
 ### Font
 
