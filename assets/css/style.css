@@ -130,6 +130,16 @@ section {
     border-radius: 0;
 }
 
+.info-button {
+    border-radius: 0;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    pointer-events: none;
+}
+
 .btn[data-bs-toggle="offcanvas"] {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
