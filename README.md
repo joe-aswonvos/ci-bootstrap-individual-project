@@ -272,6 +272,10 @@ No material issues, CSS passed with no errors, on the HTML check 8 'info' pieces
 
 This required a dip into the html to fix - I considered asking Co-Pilot to do it, but given it was likely the source of the issue I didn't want to introduce further syntax errors.
 
+### Cross Browser Testing
+
+Through the development cycle the page was viewed and run on Chrome, I have also run the manual tests on MS Edge and Safari with no issues.
+
 ## Deployment
 
 Deployment to GitHub pages was straightforward from the main branch of the repo - no issues experienced
