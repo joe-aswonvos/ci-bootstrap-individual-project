@@ -162,13 +162,21 @@ AI - Building wireframes is crucial in the design process as it allows for the v
 
 AI - Responsive design is crucial as it ensures that a website provides an optimal viewing experience across a wide range of devices, enhancing usability and accessibility for all users.
 
+Wireframes created using Balsamiq Wireframes
+
 #### Mobile Layout
 
 The intended mobile layout is a straightforward vertically scrolling site, with opportunities to click on items and open offcanvas elements for more information.
 
+![Balsamiq Mobile Wireframe Image](assets/images/dyr-mobile-wireframe.png)
+
 #### Desktop Layour
 
 The intended desktop layout takes advantage of increased screen real-estate to put content side by side under the section headers, to prevent undue repitition of the sections, different Bootstrap elements and ordering will be used for variety.
+
+![Balsamiq Desktop Wireframe Image One](assets/images/dyr-desktop-wireframe1.png)
+
+![Balsamiq Desktop Wireframe Image Two](assets/images/dyr-desktop-wireframe2.png)
 
 ### Colour Palette
 
@@ -194,9 +202,15 @@ Google fonts were utilised, with a stylised font 'Tektur' chosed for headings an
 
 ### Images
 
+Originally I had chosen an image for the hero-section from unsplash, however in the spirit of max AI utilisation I used a prompt generated illustration from MS CoPilot.
+
 ### Icons
 
+Icon in the navbar used from [font-awesome](https://fontawesome.com/)
+
 ### Favicon
+
+The favicons for both light/dark themes were downloaded from [icons8.com](https://icons8.com/)
 
 ### AI Tools
 
@@ -223,16 +237,39 @@ AI - Using an AI-generated image allows for more customization and uniqueness co
 
 ## GitHub
 
+The repository was initially copied from the Code Institute template and hosted on GitHub. 
+
+GitHub projects was used for the kanban board of user-stories, bugfixes and testing.
 
 ## Features Implementation
 
 ### Navigation
 
+This was inserted from Bootstrap, adding an icon from font-awesome. The styling required changing later in the project due to accessibility issues with the contrast.
+
 ### Content
+
+All the content in the projest was created using Google Gemini prompts.
+
+The layout of each section utilised Bootstrap components;
+- Sources Section - An accordion, with embedded cards. Each card contained a button which initialised an offcanvas element containing more information.
+- Reasoning Section - Content was included in nav-tabs - reducing scroll required to view content. The order of content in this section on large screens was reversed compared to the sources section to improve the flow on desktop devices.
+- Fallacies Section - Cards were used for summary content, which are clickable to initialise an offcanvas element containing more information.
+- Verdict/Conclusion Section - This was simply list content divided into 2 divs to produce 2 columns on larger screens.
 
 ### Styling
 
+The colour palette and fonts were added as variables to the stylesheet - which definitely saved time when accesibility issues required slight changes.
+
+Existing Bootstrap elements were re-coloured to match the page theme, removing rounding to buttons/cards to reflect the angular nature of the primary font selected.
+
+Cards within the fallacies section had their styling changed with addition of :on-hover rules flipping colour and changing the cursor to provide UX feedback that these are interactive elements.
+
 ### Footer/Form
+
+A bootstrap footer was added and styled in line with the page, social media buttons from a Bootstrap snippit are styled to have the appropriate :on-hover colour of their site-links. Twitter has not been changed to X intentionally.
+
+The contact form was added as a Bootstrap Modal element, with a Bootstrap toast element providing the positive feedback on form submission. Both were then styled in line with the page. (The toast required a short script to be copy/pasted in from Bootstrap which I didn't consider to be breaking the 'code HTML/CSS only' constraint of the project)
 
 ## Testing and Validation
 
@@ -284,6 +321,16 @@ The live link can be found here https://joe-aswonvos.github.io/ci-bootstrap-indi
 
 ## Reflections
 
+This README file is long!
+
+The project was a great flagstone to the content covered so far in the bootcamp, it brought together the design concepts and decisions on layout/flexbox/bootstrap and the HTML/CSS coding done so far.
+
+Everything was fairly straightforward, AI coding assistance, including autocomplete and intentional prompts, was utilised to improve efficiency, some of the CoPilot inferences and suggestions were quite surprising and very useful.
+
+There were a number of issues/bugs to resolve after the initial build, which could in hindsight have been predicted - colour contrast and the accessibility of headings took time to correct and should have been avoided.
+
 ## Final Thoughts
+
+Great fun and I'm happy with the final output.
 
 ## Attributions
