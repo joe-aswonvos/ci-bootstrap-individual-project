@@ -152,6 +152,8 @@ There are a number of constraints on the design of the project based on the lear
 - The project should be deployed on GitHub pages
 - Wherever possible we should be utilising AI to improve our efficiency.
 
+To focus on the design element, all the page content was created via AI, effectively simulating this being provided a client or content-team.
+
 AI - The design of the project is constrained by specific learning outcomes, including the requirement for a single-page HTML file, full utilization of the Bootstrap framework, HTML and CSS only, deployment on GitHub Pages, and leveraging AI tools for efficiency.
 
 ### Wireframes
@@ -185,6 +187,10 @@ This caused some issues of its own when the brown was the text colour on the bla
 ### Font
 
 AI - Choosing the right font for a website is crucial as it impacts readability, user experience, and the overall aesthetic appeal, ensuring that the content is accessible and engaging for all users.
+
+Google fonts were utilised, with a stylised font 'Tektur' chosed for headings and a readable sans-serif 'Quicksand' chosed for body text.
+
+![Font Selection](assets/images/dyr-fontselection.png)
 
 ### Images
 
@@ -234,11 +240,19 @@ AI - Using an AI-generated image allows for more customization and uniqueness co
 
 Testing plan produced and saved on the kanban board [here](https://github.com/joe-aswonvos/ci-bootstrap-individual-project/issues/8)
 
-### Lighthouse Report - Page Load
+The majority of the testing consisted of checking the elements within the page function as intended, where there were no issues, there were also some external tools/benchmarks used;
 
-Given the project is hosted on GitHub pages, and is reliant on both Bootstrap and FontAwesome external libraries, a number of the page-load
+### Lighthouse Report - Performance (Mobile)
 
-### Lighthouse Report - Accessibility
+Given the project is hosted on GitHub pages, and is reliant on both Bootstrap and FontAwesome external libraries, a number of the performance issues are outside of my control, however 2 suggestions were able to be implemented via code-edits to the HTML head;
+- Preload the background image of the hero section
+- Preconnect to the Font-Awesome
+
+Final performance report
+
+![Lighthouse Performance Report Final](assets/images/dyr-performance-final.png)
+
+### Lighthouse Report - Accessibility (Mobile)
 
 ![Lighthouse Report Pre Colour Change](assets/images/dyr-accessibility-precontrast.png)
 
@@ -246,7 +260,7 @@ The initial result indicated a couple of items to work on;
 - Colour contrast, for readability (see [colour section](#colour-palette))
 - Correct use of descending headings across the page - these had been applied as an approximation, but some headings were skipped in the final result. As I was happy with the visuals for the headings I corrected the heading type, but added the bootstrap class of the 'incorrect' heading to keep the styling.
 
-![Lighthouse Report Post Colour Change](assets/images/dyr-accessibility-final.png)
+![Lighthouse Accessibility Report Final](assets/images/dyr-accessibility-final.png)
 
 After making the changes, the report came back at 100%
 
