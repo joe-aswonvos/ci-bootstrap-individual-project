@@ -230,13 +230,25 @@ AI - Using an AI-generated image allows for more customization and uniqueness co
 
 ## Testing and Validation
 
-### Lighthouse Report
+### Testing Plan
 
-### Lighthouse Report
+Testing plan produced and saved on the kanban board [here](https://github.com/joe-aswonvos/ci-bootstrap-individual-project/issues/8)
+
+### Lighthouse Report - Page Load
+
+Given the project is hosted on GitHub pages, and is reliant on both Bootstrap and FontAwesome external libraries, a number of the page-load
+
+### Lighthouse Report - Accessibility
 
 ![Lighthouse Report Pre Colour Change](assets/images/dyr-accessibility-precontrast.png)
 
+The initial result indicated a couple of items to work on;
+- Colour contrast, for readability (see [colour section](#colour-palette))
+- Correct use of descending headings across the page - these had been applied as an approximation, but some headings were skipped in the final result. As I was happy with the visuals for the headings I corrected the heading type, but added the bootstrap class of the 'incorrect' heading to keep the styling.
+
 ![Lighthouse Report Post Colour Change](assets/images/dyr-accessibility-final.png)
+
+After making the changes, the report came back at 100%
 
 ### WC3 Validation
 
