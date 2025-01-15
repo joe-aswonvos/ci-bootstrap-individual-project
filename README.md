@@ -266,6 +266,12 @@ After making the changes, the report came back at 100%
 
 ### WC3 Validation
 
+No material issues, 8 'info' pieces of feedback on the same issue - feel this is likely added by AI in production of boilerplate/suggestions.
+
+![W3 HTML Check Issue](assets/images/dyr-w3htmlcheck.png)
+
+This required a dip into the html to fix - I considered asking Co-Pilot to do it, but given it was likely the source of the issue I didn't want to introduce further syntax errors.
+
 ## Deployment
 
 ## Reflections
